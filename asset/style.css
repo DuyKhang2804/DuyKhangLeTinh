@@ -24660,3 +24660,10 @@ a.ui-button:active, .ui-button:active,
     opacity: .5;
     transform: rotate(-130deg);
 }
+
+.custom-btn {
+    border: none !important;
+    outline: none !important;
+    outline-offset: 0px !important;
+    box-shadow: none !important;
+}
