@@ -36,7 +36,7 @@
 </head>
 
 <body>
-
+    <audio id="audio-player" autoplay name="audio-player" src="./asset/music/mucsic1.mp3"></audio>
     <!-- start page-wrapper -->
     <div class="page-wrapper">
         <!-- start preloader -->
@@ -99,9 +99,8 @@
                             </div>
                             <div class="col-lg-2 col-md-2 col-2">
                                 <div class="header-right">
-                                    <p class="donate">
-                                        <i class="fa-solid fa-gift"></i>
-                                    </p>
+                                    <a class="btn btn-primary" data-bs-toggle="modal" href="#exampleModalToggle"
+                                        role="button">Open first modal</a>
                                 </div>
                             </div>
                         </div>
@@ -262,9 +261,107 @@
             </div>
         </section>
         <!-- end of hero slider -->
-        <!-- start couple-section -->
-        <p>Couple</p>
-        <!-- end couple-section -->
+        <!-- start wpo-wedding-countdown -->
+        <section class="wpo-wedding-countdown section-padding">
+            <h2 class="hidden">countdown</h2>
+            <div class="container">
+                <div class="row wow fadeInUp" data-wow-duration="1600ms"
+                    style="visibility: visible; animation-duration: 1600ms; animation-name: fadeInUp;">
+                    <div class="col col-xs-12">
+                        <div class="clock-grids">
+                            <div id="clock">
+                                <div class="box">
+                                    <div>
+                                        <div class="time">431</div> <span>Days</span>
+                                    </div>
+                                </div>
+                                <div class="box">
+                                    <div>
+                                        <div class="time">19</div> <span>Hours</span>
+                                    </div>
+                                </div>
+                                <div class="box">
+                                    <div>
+                                        <div class="time">47</div> <span>Mins</span>
+                                    </div>
+                                </div>
+                                <div class="box">
+                                    <div>
+                                        <div class="time">12</div> <span>Secs</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- end container -->
+        </section>
+        <!-- end wpo-wedding-countdown -->
+        <!-- start wpo-couple-section -->
+        <section class="wpo-couple-section-s3 section-padding" id="couple">
+            <div class="container-fluid">
+                <div class="couple-area clearfix">
+                    <div class="row align-items-center">
+                        <div class="col col-xl-3 col-lg-4 col-12">
+                            <div class="text-grid wow fadeInLeftSlow" data-wow-duration="800ms"
+                                style="visibility: visible; animation-duration: 800ms; animation-name: fadeInLeftSlow;">
+                                <div class="vector">
+                                    <img src="./asset/img/vector-1.svg" alt="">
+                                </div>
+                                <h3>Duy Khang</h3>
+                                <p>Lorem ipsum dolor sit amet.</p>
+                                <div class="social">
+                                    <ul>
+                                        <li><a href="https://www.facebook.com/khang.dao.37" target="_blank"><i
+                                                    class="fa-brands fa-facebook" style="font-size: 35px;"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col col-xl-6 col-lg-4 col-12">
+                            <div class="middle-couple-pic wow fadeInUp" data-wow-duration="1000ms"
+                                style="visibility: visible; animation-duration: 1000ms; animation-name: fadeInUp;">
+                                <div class="middle-couple-pic-inner">
+                                    <img src="./asset/img/couple.jpg" alt="">
+                                </div>
+                                <div class="couple-flower">
+                                    <img src="./asset/img/couple-flower.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col col-xl-3 col-lg-4 col-12">
+                            <div class="text-grid wow fadeInRightSlow" data-wow-duration="800ms"
+                                style="visibility: visible; animation-duration: 800ms; animation-name: fadeInRightSlow;">
+                                <div class="vector">
+                                    <img src="./asset/img/vector-2.svg" alt="">
+                                </div>
+                                <h3>Le Tinh</h3>
+                                <p>Lorem ipsum dolor sit amet.</p>
+                                <div class="social">
+                                    <ul>
+                                        <li><a href="https://www.facebook.com/ms.le.tinh99" target="_blank"><i
+                                                    class="fa-brands fa-facebook" style="font-size: 35px;"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- end container -->
+        </section>
+        <!-- end wpo-couple-section -->
+        <!-- start wpo-video-section -->
+        <section class="wpo-video-section pb-0 section-padding">
+            <h2 class="hidden">some</h2>
+            <div class="container-fluid">
+                <div class="video-wrap">
+                    <img style="width: 100%; object-fit: cover;" src="./asset/img/vidieo.jpg" alt="">
+                    <a href="https://www.youtube.com/embed/s4dWp9_nNYk" class="video-btn" data-type="iframe"><i
+                            class="fa-solid fa-play"
+                            style="vertical-align: middle; font-size: 2.5rem; color: white;"></i></a>
+                </div>
+            </div>
+        </section>
 
         <!-- start wpo-story-section -->
         <section class="wpo-story-section-s2 section-padding" id="story">
@@ -955,7 +1052,7 @@
                                     </div>
                                 </div>
                                 <div class="wpo-team-text">
-                                    <h3>Huynh Thi Thuy Van</h3>
+                                    <h3>Huynh Thi <br>Thuy Van</h3>
                                     <span>Groom's Mother</span>
                                 </div>
                             </div>
@@ -1095,8 +1192,11 @@
 
         <!-- start wpo-portfolio-section -->
         <section class="wpo-portfolio-section-s2 section-padding pt-120" id="gallery">
-            <h2 class="hidden">some</h2>
             <div class="container-fluid">
+                <div class="wpo-section-title">
+                    <span>Bride's House</span>
+                    <h2>Engagement Ceremony</h2>
+                </div>
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="sortable-gallery">
@@ -1105,60 +1205,50 @@
                                 style="position: relative; height: 916.938px;">
                                 <div class="grid" style="position: absolute; left: 0px; top: 0px;">
                                     <div class="img-holder">
-                                        <a href="./Habibi - Wedding &amp; Wedding Planner HTML5 Template_files/7.jpg"
-                                            class="fancybox" data-fancybox-group="gall-1">
-                                            <img src="./Habibi - Wedding &amp; Wedding Planner HTML5 Template_files/7.jpg"
-                                                alt="" class="img img-responsive">
+                                        <a href="./asset/img/img18.jpg" class="fancybox" data-fancybox-group="gall-1">
+                                            <img src="./asset/img/img18.jpg" alt="" class="img img-responsive">
                                             <div class="hover-content">
-                                                <i class="ti-plus"></i>
+                                                <i class="fa-solid fa-plus"></i>
                                             </div>
                                         </a>
                                     </div>
                                 </div>
                                 <div class="grid" style="position: absolute; left: 624px; top: 0px;">
                                     <div class="img-holder">
-                                        <a href="./Habibi - Wedding &amp; Wedding Planner HTML5 Template_files/8.jpg"
-                                            class="fancybox" data-fancybox-group="gall-1">
-                                            <img src="./Habibi - Wedding &amp; Wedding Planner HTML5 Template_files/8.jpg"
-                                                alt="" class="img img-responsive">
+                                        <a href="./asset/img/img22.jpg" class="fancybox" data-fancybox-group="gall-1">
+                                            <img src="./asset/img/img22.jpg" alt="" class="img img-responsive">
                                             <div class="hover-content">
-                                                <i class="ti-plus"></i>
+                                                <i class="fa-solid fa-plus"></i>
                                             </div>
                                         </a>
                                     </div>
                                 </div>
                                 <div class="grid" style="position: absolute; left: 1248px; top: 0px;">
                                     <div class="img-holder">
-                                        <a href="./Habibi - Wedding &amp; Wedding Planner HTML5 Template_files/9.jpg"
-                                            class="fancybox" data-fancybox-group="gall-1">
-                                            <img src="./Habibi - Wedding &amp; Wedding Planner HTML5 Template_files/9.jpg"
-                                                alt="" class="img img-responsive">
+                                        <a href="./asset/img/img19.jpg" class="fancybox" data-fancybox-group="gall-1">
+                                            <img src="./asset/img/img19.jpg" alt="" class="img img-responsive">
                                             <div class="hover-content">
-                                                <i class="ti-plus"></i>
+                                                <i class="fa-solid fa-plus"></i>
                                             </div>
                                         </a>
                                     </div>
                                 </div>
                                 <div class="grid" style="position: absolute; left: 0px; top: 458px;">
                                     <div class="img-holder">
-                                        <a href="./Habibi - Wedding &amp; Wedding Planner HTML5 Template_files/10.jpg"
-                                            class="fancybox" data-fancybox-group="gall-1">
-                                            <img src="./Habibi - Wedding &amp; Wedding Planner HTML5 Template_files/10.jpg"
-                                                alt="" class="img img-responsive">
+                                        <a href="./asset/img/img20.jpg" class="fancybox" data-fancybox-group="gall-1">
+                                            <img src="./asset/img/img20.jpg" alt="" class="img img-responsive">
                                             <div class="hover-content">
-                                                <i class="ti-plus"></i>
+                                                <i class="fa-solid fa-plus"></i>
                                             </div>
                                         </a>
                                     </div>
                                 </div>
                                 <div class="grid" style="position: absolute; left: 1248px; top: 458px;">
                                     <div class="img-holder">
-                                        <a href="./Habibi - Wedding &amp; Wedding Planner HTML5 Template_files/11.jpg"
-                                            class="fancybox" data-fancybox-group="gall-1">
-                                            <img src="./Habibi - Wedding &amp; Wedding Planner HTML5 Template_files/11.jpg"
-                                                alt="" class="img img-responsive">
+                                        <a href="./asset/img/img21.jpg" class="fancybox" data-fancybox-group="gall-1">
+                                            <img src="./asset/img/img21.jpg" alt="" class="img img-responsive">
                                             <div class="hover-content">
-                                                <i class="ti-plus"></i>
+                                                <i class="fa-solid fa-plus"></i>
                                             </div>
                                         </a>
                                     </div>
@@ -1242,7 +1332,11 @@
         <footer class="wpo-site-footer-s2">
             <div class="wpo-upper-footer">
                 <div class="container">
-                    <p>Test</p>
+                    <div class="row justify-content-center">
+                        <div class="footer-logo col-lg-3 text-center">
+                            <h5>Duy Khang <br> <small>&</small> <br> Le Tinh</h5>
+                        </div>
+                    </div>
                 </div> <!-- end container -->
             </div>
             <div class="wpo-lower-footer">
@@ -1264,10 +1358,66 @@
             </div>
         </footer>
         <!-- end of wpo-site-footer-section -->
-
+        <!-- modal -->
+        <div class="modal fade" id="smallModal" tabindex="-1" role="dialog" aria-labelledby="basicModal"
+            aria-hidden="true">
+            <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="myModalLabel">Small Modal</h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <h3>Modal Body</h3>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end modal  -->
     </div>
     <!-- end of page-wrapper -->
-
+    <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+        tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Modal 1</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Show a second modal and hide this one with the button below.
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Open
+                        second modal</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2"
+        tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Modal 2</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Hide this modal and show the first with the button below.
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Back to
+                        first</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- All JavaScript files
     ================================================== -->
     <script src="./asset/jquery.min.js"></script>
@@ -1279,8 +1429,7 @@
     <script src="./asset/moving-animation.js"></script>
     <script src="./asset/tilt.jquery.min.js"></script>
     <!-- Custom script for this template -->
-    <script src="./asset/script.js"></script><a href="https://wpocean.com/html/tf/habibi/index.html#"
-        class="back-to-top" style="display: inline; opacity: 0.849197;"><i class="ti-arrow-up"></i></a>
+    <script src="./asset/script.js"></script>
 </body>
 
 </html>

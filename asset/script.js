@@ -129,7 +129,7 @@ function _0x509e() {
     ".odometer",
     ".create-account",
     "password",
-    "2024-11-30\x2020:30:00",
+    "2023-10-01\x2018:00:00",
     "<span\x20class=\x22",
     "outerHeight",
     "click",
@@ -1013,22 +1013,12 @@ function _0x509e() {
           ["find"](_0x517a2e(0x129))
           [_0x517a2e(0x164)](_0x41cf37);
       }),
-      _0x6826d1(_0x41fed8(0x160))["append"](
-        "<a\x20href=\x27#\x27\x20class=\x27back-to-top\x27><i\x20class=\x27ti-arrow-up\x27></i></a>"
-      );
-    function _0x28dea8() {
-      var _0x492bd0 = _0x41fed8,
-        _0xf42870 = 0x3e8;
-      _0x6826d1(window)[_0x492bd0(0x103)]() > _0xf42870
-        ? _0x6826d1(_0x492bd0(0xeb))[_0x492bd0(0x174)](_0x492bd0(0x141))
-        : _0x6826d1(_0x492bd0(0xeb))["fadeOut"]("slow");
-    }
-    _0x6826d1(_0x41fed8(0xca))["on"]("click", function () {
-      var _0x2a82da = _0x41fed8;
-      return (
-        _0x6826d1(_0x2a82da(0x16d))["animate"]({ scrollTop: 0x0 }, 0x2bc), ![]
-      );
-    }),
+      _0x6826d1(_0x41fed8(0xca))["on"]("click", function () {
+        var _0x2a82da = _0x41fed8;
+        return (
+          _0x6826d1(_0x2a82da(0x16d))["animate"]({ scrollTop: 0x0 }, 0x2bc), ![]
+        );
+      }),
       _0x6826d1("#clock")[_0x41fed8(0x151)] &&
         _0x6826d1(_0x41fed8(0x17f))["countdown"](
           _0x41fed8(0x112),
@@ -1047,7 +1037,7 @@ function _0x509e() {
         ),
       _0x6826d1(_0x41fed8(0x118))[_0x41fed8(0x151)] &&
         _0x6826d1(_0x41fed8(0x118))[_0x41fed8(0x153)](
-          "2024-11-30\x2020:30:00",
+          "2023-10-01\x2018:00:00",
           function (_0x4a7874) {
             var _0x453497 = _0x41fed8,
               _0x5563a5 = _0x6826d1(this)[_0x453497(0x1b3)](
@@ -1156,8 +1146,7 @@ function _0x509e() {
       }),
       _0x6826d1(window)["on"](_0x41fed8(0x133), function () {
         var _0x179ef5 = _0x41fed8;
-        _0x28dea8(),
-          _0x254361(_0x6826d1(_0x179ef5(0x1b4))),
+        _0x254361(_0x6826d1(_0x179ef5(0x1b4))),
           _0x6826d1(_0x179ef5(0xd0))["length"] &&
             _0x490f3f(_0x6826d1(_0x179ef5(0x152)), "sticky-on");
       }),
