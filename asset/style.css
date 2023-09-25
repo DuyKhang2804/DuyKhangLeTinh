@@ -5104,6 +5104,12 @@ a.ui-button:active, .ui-button:active,
     }
 }
 
+@media (max-width: 450px) {
+    .static-hero-s2 .static-hero-right .static-hero-img .inner-image-1 {
+        display: none !important;
+    }
+}
+
 .static-hero-s2 .static-hero-right .static-hero-img .inner-image-2 {
     position: absolute;
     right: -165px;
@@ -5125,6 +5131,12 @@ a.ui-button:active, .ui-button:active,
 @media (max-width: 575px) {
     .static-hero-s2 .static-hero-right .static-hero-img .inner-image-2 {
         right: -40px;
+    }
+}
+
+@media (max-width: 450px) {
+    .static-hero-s2 .static-hero-right .static-hero-img .inner-image-2 {
+        display: none !important;
     }
 }
 
@@ -24666,4 +24678,10 @@ a.ui-button:active, .ui-button:active,
     outline: none !important;
     outline-offset: 0px !important;
     box-shadow: none !important;
+}
+
+@media (max-width: 991px) {
+    .custom-hide {
+        display: none !important;
+    }
 }
