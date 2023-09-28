@@ -323,6 +323,89 @@ img {
     transform: translate(-50%, -50%);
 }
 
+/* play music */
+.bii-player {
+    position: fixed;
+    bottom: 15px;
+    left: 15px;
+    width: 35px;
+    height: 35px;
+    z-index: 999;
+}
+
+.bii-player::after {
+    content: "";
+    position: absolute;
+    background-color: rgba(101, 113, 80, 0.7);
+    border-radius: 50%;
+    width: 123%;
+    height: 123%;
+    left: -4px;
+    top: -4px;
+    z-index: 1;
+    animation: biilogo 1s infinite;
+}
+
+.bii-player-secondary {
+    position: absolute;
+    width: 310px;
+    left: 25px;
+    height: 50px;
+
+    /* overflow: hidden;
+    visibility: hidden; */
+}
+
+.bii-player-secondary-content {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    position: absolute;
+    width: 285px;
+    left: -25px;
+    background: #fff;
+    height: 35px;
+    padding-left: 50px;
+    border: 1px solid #657150;
+    border-radius: 30px;
+    z-index: 1;
+    font-size: 14px;
+    transition: all .5s;
+    color: #000;
+    opacity: 1;
+}
+
+@keyframes biilogo {
+    0% {
+        transform: scale3d(1, 1, 1);
+    }
+
+    50% {
+        transform: scale3d(0.95, 0.95, 0.95);
+    }
+
+    100% {
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+.playerIcon {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+    background-color: #657150;
+    position: absolute;
+    z-index: 2;
+}
+
 /** for popup image ***/
 .mfp-wrap {
     background-color: rgba(0, 0, 0, 0.9);
@@ -24673,6 +24756,22 @@ a.ui-button:active, .ui-button:active,
     transform: rotate(-130deg);
 }
 
+@media (max-width: 767px) {
+    .footer-logo::after {
+        right: 0;
+    }
+
+    .footer-logo::before {
+        left: 0;
+    }
+}
+
+@media (max-width: 450px) {
+    .footer-logo h5 {
+        font-size: 2rem;
+    }
+}
+
 .custom-btn {
     border: none !important;
     outline: none !important;
@@ -24684,4 +24783,12 @@ a.ui-button:active, .ui-button:active,
     .custom-hide {
         display: none !important;
     }
+}
+
+.owl-nav {
+    display: none !important;
+}
+
+button.owl-prev {
+    display: none !important;
 }

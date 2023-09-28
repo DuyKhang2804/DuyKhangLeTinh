@@ -622,6 +622,9 @@ function _0x509e() {
         return (
           _0x6826d1["fancybox"]({
             href: this[_0x2e6cf8(0xf3)],
+            swipe: true,
+            vertical: false,
+            touch: true,
             aspectRatio: !![],
             type: _0x6826d1(this)[_0x2e6cf8(0x107)]("type"),
             title: this[_0x2e6cf8(0xce)],
@@ -786,7 +789,7 @@ function _0x509e() {
         margin: 0x0,
         loop: ![],
         autoplayHoverPause: !![],
-        dots: ![],
+        dots: false,
         nav: !![],
         navText: [
           _0x41fed8(0x19b),
@@ -794,7 +797,7 @@ function _0x509e() {
         ],
         items: 0x5,
         responsive: {
-          0x0: { items: 0x1, dots: !![] },
+          0x0: { items: 0x1, dots: false },
           0x2ff: { items: 0x2 },
           0x4b0: { items: 0x3 },
           0x514: { items: 0x4 },
@@ -809,8 +812,8 @@ function _0x509e() {
         arrows: ![],
         fade: !![],
         asNavFor: _0x41fed8(0x1ae),
-        dots: ![],
-        responsive: [{ breakpoint: 0x3df, settings: { dots: ![] } }],
+        dots: false,
+        responsive: [{ breakpoint: 0x3df, settings: { dots: false } }],
       }),
       _0x6826d1(_0x41fed8(0x1ae))["slick"]({
         slidesToShow: 0x1,
@@ -818,8 +821,8 @@ function _0x509e() {
         asNavFor: ".slider-for",
         focusOnSelect: !![],
         arrows: ![],
-        dots: !![],
-        responsive: [{ breakpoint: 0x3df, settings: { dots: !![] } }],
+        dots: false,
+        responsive: [{ breakpoint: 0x3df, settings: { dots: null } }],
       }));
     _0x6826d1(_0x41fed8(0x13f))[_0x41fed8(0x151)] &&
       _0x6826d1(_0x41fed8(0x104))[_0x41fed8(0x11b)]({
@@ -827,7 +830,7 @@ function _0x509e() {
         slidesToScroll: 0x1,
         focusOnSelect: !![],
         arrows: ![],
-        dots: !![],
+        dots: false,
       });
     _0x6826d1(_0x41fed8(0x1a0))[_0x41fed8(0x151)] &&
       _0x6826d1(_0x41fed8(0x187))["slick"]({
@@ -835,7 +838,7 @@ function _0x509e() {
         slidesToScroll: 0x1,
         focusOnSelect: !![],
         arrows: ![],
-        dots: !![],
+        dots: false,
       });
     _0x6826d1(".wpo-portfolio-section-s4")["length"] &&
       _0x6826d1(".gallery-slide")["slick"]({
@@ -843,7 +846,7 @@ function _0x509e() {
         slidesToScroll: 0x1,
         focusOnSelect: !![],
         arrows: ![],
-        dots: ![],
+        dots: false,
         variableWidth: !![],
         loop: ![],
         autoplay: ![],
@@ -854,7 +857,7 @@ function _0x509e() {
         slidesToScroll: 0x1,
         focusOnSelect: !![],
         arrows: ![],
-        dots: ![],
+        dots: false,
         variableWidth: !![],
         loop: ![],
         autoplay: ![],
@@ -865,7 +868,7 @@ function _0x509e() {
         slidesToScroll: 0x1,
         arrows: ![],
         asNavFor: _0x41fed8(0x1ae),
-        dots: ![],
+        dots: false,
       }),
       _0x6826d1(_0x41fed8(0x1ae))[_0x41fed8(0x11b)]({
         slidesToShow: 0x1,
@@ -874,7 +877,7 @@ function _0x509e() {
         focusOnSelect: !![],
         arrows: ![],
         fade: !![],
-        dots: ![],
+        dots: false,
         autoplay: !![],
         autoplaySpeed: 0xbb8,
         speed: 0x7d0,
@@ -886,13 +889,13 @@ function _0x509e() {
         margin: 0x14,
         loop: !![],
         autoplayHoverPause: !![],
-        dots: ![],
+        dots: false,
         nav: !![],
         navText: [_0x41fed8(0x19b), _0x41fed8(0x154)],
         responsive: {
-          0x0: { items: 0x1, dots: !![], nav: ![] },
-          0x1f4: { items: 0x1, dots: !![], nav: ![] },
-          0x300: { items: 0x2, dots: ![] },
+          0x0: { items: 0x1, dots: false, nav: ![] },
+          0x1f4: { items: 0x1, dots: false, nav: ![] },
+          0x300: { items: 0x2, dots: false },
           0x4b0: { items: 0x3 },
           0x578: { items: 0x3 },
         },
@@ -904,7 +907,7 @@ function _0x509e() {
         margin: 0x0,
         loop: !![],
         autoplayHoverPause: !![],
-        dots: ![],
+        dots: false,
         arrows: ![],
         nav: ![],
         responsive: {
@@ -921,7 +924,7 @@ function _0x509e() {
         margin: 0x1e,
         loop: !![],
         autoplayHoverPause: !![],
-        dots: ![],
+        dots: false,
         arrows: ![],
         nav: !![],
         center: !![],
@@ -943,7 +946,7 @@ function _0x509e() {
         loop: !![],
         nav: !![],
         navText: [_0x41fed8(0x1b0), _0x41fed8(0x173)],
-        dots: ![],
+        dots: false,
         items: 0x1,
       });
     _0x6826d1(_0x41fed8(0x176))[_0x41fed8(0x151)] &&
@@ -1204,5 +1207,44 @@ $(document).ready(function () {
     var position = target.offset().top - headerHeight;
     $("body,html").animate({ scrollTop: position }, speed, "swing");
     return false;
+  });
+});
+
+function playPause() {
+  const audio = document.getElementById("myAudio");
+  const on = document.getElementById("playerVolumeOn");
+  const off = document.getElementById("playerVolumeOff");
+  const biiText = document.getElementById("bii-text");
+  if (audio.paused) {
+    audio.play();
+    on.style.display = "block";
+    off.style.display = "none";
+    biiText.style.opacity = 0;
+    biiText.style.visibility = "hidden";
+  } else {
+    audio.pause();
+    on.style.display = "none";
+    off.style.display = "block";
+    biiText.style.opacity = 1;
+    biiText.style.visibility = "visible";
+  }
+}
+
+$(document).ready(function () {
+  // Use AJAX to load your website's content
+  $.ajax({
+    url: "index.html",
+    dataType: "html",
+    success: function (data) {
+      // Hide the preloader when content is loaded
+      $("#custompreloading").css("display", "none");
+      $("#afterpreloading").css("display", "block");
+      // Replace the content with the loaded data
+      // $("#afterpreloading").html(data);
+    },
+    error: function () {
+      // Handle errors if the content fails to load
+      alert("Failed to load content.");
+    },
   });
 });
